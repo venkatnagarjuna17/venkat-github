@@ -1,10 +1,10 @@
 pipeline {
-agent {'label sunflower'}
-stages {
-stage ('build tree') {
-steps {
-echo "it is basic thing" 
-}
-}
-}
+    agent {label 'slave'}
+    stages {
+        stage ('build stage'){
+            steps {
+                echo "this is farook"
+            }
+        }
+    }
 }
