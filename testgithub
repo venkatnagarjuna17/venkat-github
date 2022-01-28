@@ -1,0 +1,10 @@
+pipeline {
+agent {'label sunflower'}
+stages {
+stage ('build tree') {
+steps {
+echo "it is basic thing" 
+}
+}
+}
+}
